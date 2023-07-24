@@ -8,7 +8,7 @@ https://github.com/FlyGoat/RyzenAdj/issues/145
 
 additional modification for force resetting stapm_limit every loop for some AMD Laptop UEFIs that restricts it.
 
-Tested on Thinkpad L15 Gen 1 w/ 4750u, L15 Gen 2 w/ 5850u, T14 G2 20XK0015US with 5650u.
+Tested on Thinkpad L15 Gen 1 w/ 4750u, L15 Gen 2 w/ 5850u, T14 G2 20XK0015US with 5650u. (balanced power profile with power slider at Best performance, Windows 10 22H2, Windows 11 22H2)
 Reaches up to manufacturer limited 48w for fast power limit
 Uses 12ms sleep interval to hit specified fast power limit exactly, but if a target power is desired that's less than fast power limit, can modulate sleep interval with fast at max, in order to hit a slightly higher average power than manufacturer restricted slow limit (this way it's less overhead and calls to set limits, in a way it's like PWM)
 
