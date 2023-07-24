@@ -14,7 +14,7 @@ Uses 12ms sleep interval to hit specified fast power limit exactly, but if a tar
 
 Parameter dump and info
 
-`ryzenadjtimer.exe -D 0`
+`ryzenadjtimer.exe -D 0` (4 is default log level, which will show when it resets, 0 disables logs, but errors are printed to stderr)
 ```haskell
 [Q]-Quit [Backspace]-Show vals in title [DEL]-Print vals [INS]-Print args
 [ 0] (1:reset) (setfn:1) -a --stapm_normal_limit 100000 (0x186a0)
